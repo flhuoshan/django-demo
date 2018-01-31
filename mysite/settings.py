@@ -25,7 +25,7 @@ SECRET_KEY = '-%tj(l9h#g*_*3kv-!+^wanrdxnnbohkr9x-w&gup9et@xx%4+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -116,7 +116,11 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+# 时区设置
+USE_TZ = False
+
+TIME_ZONE='Asia/Shanghai'
+
 
 
 # Static files (CSS, JavaScript, Images)
